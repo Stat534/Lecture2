@@ -444,8 +444,8 @@ git config --global user.email 'who@montana.edu'</code></pre>
 <li><p>Also, know that R Studio has some built in features that simplify the git process too.</p></li>
 </ul>
 </div>
-<div id="git---to---github-with-r-studio" class="slide section level2">
-<h1>Git - to - Github with R Studio</h1>
+<div id="git---to---github-with-r-studio-1" class="slide section level2">
+<h1>Git - to - Github with R Studio: 1</h1>
 <ul>
 <li><p>Our goal is to work locally, in R Studio, and <em>push</em> updates to github.</p></li>
 <li>First, go to your github page and create a new repo. To do this,
@@ -457,6 +457,49 @@ git config --global user.email 'who@montana.edu'</code></pre>
 <li>Click: create repository.</li>
 </ul></li>
 <li><p>Next, we will clone this repo and create an R Studio project associated with it.</p></li>
+</ul>
+</div>
+<div id="git---to---github-with-r-studio-2" class="slide section level2">
+<h1>Git - to - Github with R Studio: 2</h1>
+<ul>
+<li><p>Now we want to create a local git repo associated with the one hosted on github.</p></li>
+<li>First we need to set up version control in R Studio <a href="https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN">(more details here)</a>
+<ol style="list-style-type: decimal">
+<li>Tools … Global Options .. Git/SVN</li>
+<li>Click enable version controll interface for R Studio projects</li>
+</ol></li>
+<li>Then we will create this git repo as an R project, by cloning the one on github.
+<ol style="list-style-type: decimal">
+<li>File … New Project … Version Control … Git</li>
+<li>Repository URL: This can be obtained from the clone button in github.</li>
+<li>Project directory name: this will be the name of the folder containing the repo</li>
+<li>Create project as subdirectory of: this is location for the file, you may want to think about a structured file system on your local computer.</li>
+</ol></li>
+</ul>
+</div>
+<div id="git---to---github-with-r-studio-3" class="slide section level2">
+<h1>Git - to - Github with R Studio: 3</h1>
+<p>We now have created a local git repo.</p>
+<ol style="list-style-type: decimal">
+<li><p>Click on the terminal window and type <code>git status</code>, you will see our current work is up to dat.</p></li>
+<li><p>Now click on README.md in the file pane and add a new line that says, “modified in R Studio” and save this file.</p></li>
+<li>Open the Git tab in the top right and we will see that README.md has been updated.
+<ol style="list-style-type: decimal">
+<li>Click on staged (this is essentially the same as typing git add README.md in the terminal)</li>
+<li>Click on commit, this will open up a new window. A commit basically amounts to saving a version of all of the current status of all of the files in the repo.</li>
+<li>Type a message, such as “changes from R Studio” and click commit</li>
+<li>Click on push, and enter github username and password, if necessary. Note: you may want to simplify the push-pull actions by saving github account information <a href="https://happygitwithr.com/push-pull-github.html#am-i-really-going-to-type-github-username-and-password-on-each-push">details</a></li>
+</ol></li>
+</ol>
+</div>
+<div id="git---to---github-with-r-studio-4" class="slide section level2">
+<h1>Git - to - Github with R Studio: 4</h1>
+<ul>
+<li><p>Now return to your github page. If you refresh, you should seee a new commit that contains the additional info we added in R studio.</p></li>
+<li><p>Go ahead and modify the README.md in github to add a line stating modified in github.</p></li>
+<li><p>Commit the update along with a message. We will now see that there have been three commits.</p></li>
+<li><p>The final step is to call a <code>pull</code> command from R Studio to bring those updates to your local repo.</p></li>
+<li><p>It is always good practice to <code>pull</code> before a <code>push</code>, especially as you start to collaborate with others.</p></li>
 </ul>
 </div>
 
