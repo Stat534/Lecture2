@@ -84,7 +84,7 @@ Note the email should correspond to the one you used to sign up for github.
     
 - Also, know that R Studio has some built in features that simplify the git process too.
 
-## Git - to - Github with R Studio
+## Git - to - Github with R Studio: 1
 
 - Our goal is to work locally, in R Studio, and *push* updates to github.
 
@@ -96,3 +96,44 @@ Note the email should correspond to the one you used to sign up for github.
     - Click: create repository.
     
 - Next, we will clone this repo and create an R Studio project associated with it.
+
+## Git - to - Github with R Studio: 2
+
+- Now we want to create a local git repo associated with the one hosted on github.
+
+- First we need to set up version control in R Studio [(more details here)](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
+    1. Tools ... Global Options .. Git/SVN 
+    2. Click enable version controll interface for R Studio projects
+
+- Then we will create this git repo as an R project, by cloning the one on github.
+    1. File ... New Project ... Version Control ... Git
+    2. Repository URL: This can be obtained from the clone button in github.
+    3. Project directory name: this will be the name of the folder containing the repo
+    4. Create project as subdirectory of: this is location for the file, you may want to think about a structured file system on your local computer.
+    
+
+## Git - to - Github with R Studio: 3
+
+We now have created a local git repo.
+
+1. Click on the terminal window and type `git status`, you will see our current work is up to dat.
+
+2. Now click on README.md in the file pane and add a new line that says, "modified in R Studio" and save this file.
+
+3. Open the Git tab in the top right and we will see that README.md has been updated. 
+    1. Click on staged (this is essentially the same as typing git add README.md in the terminal)
+    2. Click on commit, this will open up a new window. A commit basically amounts to saving a version of all of the current status of all of the files in the repo.
+    3. Type a message, such as "changes from R Studio" and click commit
+    4. Click on push, and enter github username and password, if necessary. Note: you may want to simplify the push-pull actions by saving github account information [details](https://happygitwithr.com/push-pull-github.html#am-i-really-going-to-type-github-username-and-password-on-each-push)
+
+## Git - to - Github with R Studio: 4
+
+- Now return to your github page. If you refresh, you should seee a new commit that contains the additional info we added in R studio.
+
+- Go ahead and modify the README.md in github to add a line stating modified in github.
+
+- Commit the update along with a message. We will now see that there have been three commits.
+
+- The final step is to call a `pull` command from R Studio to bring those updates to your local repo.
+
+- It is always good practice to `pull` before a `push`, especially as you start to collaborate with others.
