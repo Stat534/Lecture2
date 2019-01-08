@@ -14,3 +14,46 @@ knitr::opts_chunk$set(echo = FALSE)
 - Git will feel foreign for a while, but you will get a lot of practice in this class
 
 - A great resource, from which I've heavily borrowed is Jenny Bryan's [Happy Git and GitHub for the useR](https://happygitwithr.com)
+
+- Another good reference is the [GitHub Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+## Git: The What and the Why
+- Git is a version control system that manages as set of files as a repository, or a *repo*.
+
+- For the long version of why, see [Excuse me, do you have a moment to talk about version control?](https://peerj.com/preprints/3159/)
+
+- For today, just know:
+    - Programming expertise, and skills like this, are essential in Data Science
+    - Version control will save back up files, in case of computer problems
+    - It is an efficient way to handle collaboration
+    - Creating R packages is easy with R Studio and github
+
+## Demo Overview:
+
+I acknowledge that everyone will work at different speeds today, so feel free to work ahead.
+
+1. Github account
+2. Upgrade R and R Studio
+3. Git installation and initialization
+4. Git GUI??
+5. Git - to - Github with R Studio: access
+6. Basic Git Commands
+
+
+## Github Account
+
+- At this point you should have registered for a github account.
+
+- If not, visit [github.com](https://www.github.com) to set up your account.
+
+- If you have an account, go ahead and log in. We will use this soon.
+
+## R and R Studio Updates
+
+- R is currently on version 3.5.2, if your version is much older than this, you will want to update it [here](https://cloud.r-project.org).
+
+- Updating R can be a bit painful, but keeping current is good practice.
+
+- R Studio is constantly adding improvements and updates, including a git interface.
+
+- To stay current, consider using the [Preview version](https://www.rstudio.com/products/rstudio/download/preview/) and updating every month or so.
