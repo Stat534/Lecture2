@@ -1,7 +1,5 @@
 ---
 title: "Lecture 2: Git Basics"
-author: "Andy Hoegh"
-date: "1/8/2019"
 output: slidy_presentation
 ---
 
@@ -137,3 +135,17 @@ We now have created a local git repo.
 - The final step is to call a `pull` command from R Studio to bring those updates to your local repo.
 
 - It is always good practice to `pull` before a `push`, especially as you start to collaborate with others.
+
+## Basic Git Commands
+
+We will just cover a few basic commands for now, but the [github cheetsheet](https://education.github.com/git-cheat-sheet-education.pdf) is a good reference:
+
+- `add`: this adds or stages a file to be committed. It can also be used to track new files. Create an .Rmd file and save it within this directory as sample.Rmd . The file will not immediately show up in the Git window, we need to start tracking it. In the terminal type `git add sample.Rmd`. Note: sometimes this does not seem to work the first time and you might want to try gitKraken or some other option.
+
+- `status`: shows the current state of the git repo. Type `git status`
+
+- `commit`: saves the version of all files in the repo. Only updated files that have been staged are saved in this version. In the terminal type `git commit -m 'added sample.Rmd file for tracking`. 
+
+- `pull`: will retrieve and merge from the remote (github in this case). Type `git pull`.
+
+- `push`: sends updates that have been committed to the remote. Type `git push`. Now inspect your repo on github.

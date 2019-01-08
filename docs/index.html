@@ -5,7 +5,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <meta name="author" content="Andy Hoegh" />
   <title>Lecture 2: Git Basics</title>
   <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
@@ -364,9 +363,8 @@ list-style-type: none;
 <div class="slide titlepage">
   <h1 class="title">Lecture 2: Git Basics</h1>
   <p class="author">
-Andy Hoegh
+
   </p>
-  <p class="date">1/8/2019</p>
 </div>
 <div id="git-resources" class="slide section level2">
 <h1>Git Resources</h1>
@@ -500,6 +498,17 @@ git config --global user.email 'who@montana.edu'</code></pre>
 <li><p>Commit the update along with a message. We will now see that there have been three commits.</p></li>
 <li><p>The final step is to call a <code>pull</code> command from R Studio to bring those updates to your local repo.</p></li>
 <li><p>It is always good practice to <code>pull</code> before a <code>push</code>, especially as you start to collaborate with others.</p></li>
+</ul>
+</div>
+<div id="basic-git-commands" class="slide section level2">
+<h1>Basic Git Commands</h1>
+<p>We will just cover a few basic commands for now, but the <a href="https://education.github.com/git-cheat-sheet-education.pdf">github cheetsheet</a> is a good reference:</p>
+<ul>
+<li><p><code>add</code>: this adds or stages a file to be committed. It can also be used to track new files. Create an .Rmd file and save it within this directory as sample.Rmd . The file will not immediately show up in the Git window, we need to start tracking it. In the terminal type <code>git add sample.Rmd</code>. Note: sometimes this does not seem to work the first time and you might want to try gitKraken or some other option.</p></li>
+<li><p><code>status</code>: shows the current state of the git repo. Type <code>git status</code></p></li>
+<li><p><code>commit</code>: saves the version of all files in the repo. Only updated files that have been staged are saved in this version. In the terminal type <code>git commit -m 'added sample.Rmd file for tracking</code>.</p></li>
+<li><p><code>pull</code>: will retrieve and merge from the remote (github in this case). Type <code>git pull</code>.</p></li>
+<li><p><code>push</code>: sends updates that have been committed to the remote. Type <code>git push</code>. Now inspect your repo on github.</p></li>
 </ul>
 </div>
 
