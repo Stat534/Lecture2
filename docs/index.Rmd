@@ -27,6 +27,7 @@ knitr::opts_chunk$set(echo = FALSE)
     - Version control will save back up files, in case of computer problems
     - It is an efficient way to handle collaboration
     - Creating R packages is easy with R Studio and github
+    - Github pages allows you to create and host website free, such as the course webpage.
 
 ## Demo Overview:
 
