@@ -149,3 +149,10 @@ We will just cover a few basic commands for now, but the [github cheetsheet](htt
 - `pull`: will retrieve and merge from the remote (github in this case). Type `git pull`.
 
 - `push`: sends updates that have been committed to the remote. Type `git push`. Now inspect your repo on github.
+
+## For Next Time
+
+`ggmap` is a popular package for creating spatial maps. Unfortunately, this package now requires a Google API to extract maps. This [website](https://www.r-bloggers.com/geocoding-with-ggmap-and-the-google-api/) contains some information about `ggmap` and includes a link to set up a Google API. 
+
+Each query using the Google API costs 1/2 a cent, but Google gives $200 credit per month. Hence, unless you really, really like making maps *or have some looped code error*, costs will not be incurred. Furthermore, you can set up limits and notifications. Setting up a Google API does require a credit card.
+
